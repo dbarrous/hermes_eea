@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - main
-  
+
   pull_request:
     branches:
       - main
@@ -17,7 +17,7 @@ jobs:
     permissions:
       pull-requests: write
     uses: swxsoc/workflows/.github/workflows/calibration.yml@main
-  
+
   # Workflow to run linting on the codebase
   # https://github.com/HERMES-SOC/.github/blob/main/workflows/codestyle.yml
   linting-workflow:
@@ -27,7 +27,7 @@ jobs:
   # https://github.com/HERMES-SOC/.github/blob/main/workflows/docs.yml
   docs-workflow:
     uses: swxsoc/workflows/.github/workflows/docs.yml@main
-  
+
   # Workflow to run the test suite
   # https://github.com/HERMES-SOC/.github/blob/main/workflows/testing.yml
   testing-workflow:
